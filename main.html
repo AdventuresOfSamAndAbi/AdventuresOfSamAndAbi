@@ -1,0 +1,107 @@
+<!DOCTYPE html>			
+<html>	
+<head>
+	<title>main.html</title>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <script src="https://kit.fontawesome.com/11acc5a5c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main1.css">
+	
+	<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  color: #f15;	
+  
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+		<div class="banner">
+			<div class="nav">			
+				<b>#AdventuresOfSamAndAbi</b>		
+				<div class="menu">
+					<a href="#">Home</a>
+					<a href="#us">Us</a>
+					<a href="#venue">Reception</a>
+					<a href="#party">Muhurtham</a>
+				</div>
+			</div>
+			<div class="text">
+				<h1>Samson & Abilasha	</h1>
+				<span class="date">On 21st and 22nd May, 2023</span>
+			</div>
+		</div>
+		<div class="section">
+			<div class="us">
+				<h2><a name="us">Us</a></h2>
+				<div class="us1">	
+					<img src="https://i.ibb.co/rf8zMJP/Whats-App-Image-2023-03-24-at-10-47-07-PM.jpg" alt="Whats-App-Image-2023-03-24-at-10-47-07-PM">
+					<span>Abilasha is mine!</span>
+				</div>						
+				<p id="demo"></p>
+						 <!-- <i class="fa fa-heart" style="font-size:55px;color:red"></i>  -->
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 22, 2023 9:00:50").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+		
+				<div class="us1">
+					<img src="https://i.ibb.co/XDWKLzM/Whats-App-Image-2023-03-25-at-12-04-10-PM.jpg" alt="Whats-App-Image-2023-03-25-at-12-04-10-PM" border="0">
+					<span>Samson is mine!</span>
+				</div>
+			</div>
+			<div class="venue">
+				<h2><a name="venue">Reception </a></h2>
+        <img src="https://i.ibb.co/wZk2sTj/wed-venue.jpg">
+        <div class="venue1">	
+				<p><b style=color:#f15>Date:</b>21st May 2023 &nbsp;&nbsp;&nbsp;<b style=color:#f15>Time:</b> 06:30pm Onwards </p>
+        <p><b style=color:#f15>LOCATION: </b> BEL Kalyana Mantapa,
+          HMT Estate, Jalahalli, Bengaluru, Karnataka 560013
+         <b> <a href="https://www.google.com/maps/dir//bel+kalyana+mantapa/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bae3d52166fbe85:0xbba697104ffc24f5?sa=X&ved=2ahUKEwiJxoCtocX-AhVMS2wGHVWFCwkQ9Rd6BAhmEAM"target="_blank"><br>GEO LINK</a></b></p>
+     </div>
+			</div>
+			<div class="party">
+				<h2><a name="party">Muhurtham</a></h2>
+				<img src="https://i.ibb.co/dMb2T7P/wed-party.jpg">
+        
+				<p><b style=color:#f15>Date:</b>22nd May 2023 &nbsp;&nbsp;&nbsp;<b style=color:#f15>Time:</b> 09:00 Am To 10:30 Am </p>
+        <p><b style=color:#f15> Location:</b> BEL Kalyana Mantapa,
+          HMT Estate, Jalahalli, Bengaluru, Karnataka 560013
+          <b> <a href="https://www.google.com/maps/dir//bel+kalyana+mantapa/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bae3d52166fbe85:0xbba697104ffc24f5?sa=X&ved=2ahUKEwiJxoCtocX-AhVMS2wGHVWFCwkQ9Rd6BAhmEAM"target="_blank">GEO LINK</a></b></p>	
+			</div>
+</div>
+</body>	
+</html>
